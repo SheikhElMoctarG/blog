@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>تدويناتي</title>
+        <link>https://sheikhelmoctarg.github.io/blog</link>
+        <description>مدونة تقنية عربية تقدم مقالات ذات جودة عالية وتسعى لتبسيط التقنيات على الشاب العربي</description>
+        <lastBuildDate>Sat, 19 Feb 2022 11:51:10 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العرب]]></title>
+            <link>https://sheikhelmoctarg.github.io/blog/first-post</link>
+            <guid>https://sheikhelmoctarg.github.io/blog/first-post</guid>
+        </item>
+        <item>
+            <title><![CDATA[عنوان المنشور الثاني]]></title>
+            <link>https://sheikhelmoctarg.github.io/blog/second-post</link>
+            <guid>https://sheikhelmoctarg.github.io/blog/second-post</guid>
+        </item>
+    </channel>
+</rss>

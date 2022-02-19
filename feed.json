@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "تدويناتي",
+    "home_page_url": "https://sheikhelmoctarg.github.io/blog",
+    "description": "مدونة تقنية عربية تقدم مقالات ذات جودة عالية وتسعى لتبسيط التقنيات على الشاب العربي",
+    "items": [
+        {
+            "id": "https://sheikhelmoctarg.github.io/blog/first-post",
+            "url": "https://sheikhelmoctarg.github.io/blog/first-post",
+            "title": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العرب"
+        },
+        {
+            "id": "https://sheikhelmoctarg.github.io/blog/second-post",
+            "url": "https://sheikhelmoctarg.github.io/blog/second-post",
+            "title": "عنوان المنشور الثاني"
+        }
+    ]
+}
