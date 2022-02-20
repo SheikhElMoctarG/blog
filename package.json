@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
@@ -19,6 +20,7 @@
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "nuxt-mail": "^3.0.23",
+    "prism-themes": "^1.9.0",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",

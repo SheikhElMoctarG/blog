@@ -14,7 +14,7 @@
         </div>
         <!-- edit -->
         <div class="text-gray-600 flex items-center justify-center">
-            <img :src="require(`~/assets/icons/edit.svg`)" class="w-5 h-5 mx-1">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="ml-1 w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
             <span>{{ $moment(article.createdAt).format("YYYY MMM DD") }}</span>
         </div>
       </div>
@@ -25,7 +25,7 @@
       </div>
       </div>
 
-      <content-post :toc="article.toc"/>  
+      <content-post :toc="article.toc" :slug="article.slug"/>  
       <!-- content -->
       <nuxt-content :document="article" class="mt-8 lg:mt-12"/>
       <!-- tags -->
@@ -121,7 +121,27 @@ body{
     @apply pr-3 text-gray-500 py-2 text-sm md:text-base lg:text-lg font-medium;
 }
 .nuxt-content strong{
-    @apply font-bold bg-gray-200 p-1 text-sm md:text-base lg:text-lg rounded-md;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    padding: 0px 5px;
+    font-style: normal;
+    font-weight: 300;
+    border-radius: 0.25rem;
+    line-height: 1;
+    background-color: #fff5f5;
+    color: #c53030;
+}
+.nuxt-content ul{
+    list-style-type: circle;
+}
+.nuxt-content-highlight {
+  @apply relative;
+}
+.nuxt-content-highlight pre{
+    @apply rounded-md;
+}
+.nuxt-content-highlight .filename {
+  @apply absolute right-0 text-gray-600 font-light z-10 mr-2 mt-1 text-sm;
 }
 </style>
 

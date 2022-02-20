@@ -96,6 +96,14 @@ export default {
     Allow: '/'
   },
 
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-duotone-sea.css'
+      }
+    }
+  },
+
   sitemap: {
     hostname: "https://sheikhelmoctarg.github.io/blog",
     routes: async () =>{
