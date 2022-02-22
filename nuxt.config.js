@@ -105,12 +105,23 @@ export default {
   },
 
   sitemap: {
-    hostname: "https://sheikhelmoctarg.github.io/blog",
+    hostname: "https://sheikhelmoctarg.github.io/",
     routes: async () =>{
       const { $content } = require("@nuxt/content")
-      const articles = await $content('articles').only(['path']).fetch()
-      return articles.map((article)=> article.path)
+      const articles = await $content('articles').only(['slug', 'createdAt']).fetch()
+      var url = articles.map((e)=> e.slug);
+      var date = articles.map((e)=> e.createdAt)
+      const p = [
+        {
+          url: url.join(),
+          changefreq: 'daily',
+          priority: 1,
+          lastmod: date.join()
+        }
+      ]
+      return p;
     }
+    
   },
   moment: {
     locales: ["ar"],
